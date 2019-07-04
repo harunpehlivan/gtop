@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Test will be implemented.\" && exit 0",
-    "start": "./bin/gtop"
+    "start": "./bin/gtop",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -32,9 +34,11 @@
   "dependencies": {
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.8.6",
-    "systeminformation": "^3.45.6"
+    "systeminformation": "^3.45.6",
+    "snyk": "^1.189.0"
   },
   "engines": {
     "node": ">=4.0.0"
-  }
+  },
+  "snyk": true
 }
